@@ -3,11 +3,19 @@
     Dim game_level As String
     Dim f2 As Form
 
+    Private Sub ComboBox_Control_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        level_combo.Items.Add("easy")
+        level_combo.Items.Add("medium")
+        level_combo.Items.Add("hard")
+
+    End Sub
+
+
     Private Sub StartButtonClick(sender As Object, e As EventArgs) Handles StartButton.Click
 
         'Get form inputs
         player_name = txtPlayer.Text
-        game_level = txtDifficulty.Text
+        game_level = level_combo.Text
 
         'Ensure inputs are not null
         If player_name = "" Or game_level = "" Then

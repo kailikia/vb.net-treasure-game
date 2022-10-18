@@ -26,6 +26,11 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.gamelevel = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.guesses = New System.Windows.Forms.Label()
+        Me.user_guess = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Submit_Guess = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'playername
@@ -64,11 +69,59 @@ Partial Class Form2
         Me.gamelevel.TabIndex = 3
         Me.gamelevel.Text = "Label3"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(277, 69)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(113, 15)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Number of Guesses:"
+        '
+        'guesses
+        '
+        Me.guesses.AutoSize = True
+        Me.guesses.Location = New System.Drawing.Point(411, 69)
+        Me.guesses.Name = "guesses"
+        Me.guesses.Size = New System.Drawing.Size(41, 15)
+        Me.guesses.TabIndex = 5
+        Me.guesses.Text = "Label4"
+        '
+        'user_guess
+        '
+        Me.user_guess.Location = New System.Drawing.Point(352, 145)
+        Me.user_guess.Name = "user_guess"
+        Me.user_guess.Size = New System.Drawing.Size(100, 23)
+        Me.user_guess.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(275, 153)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 15)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Enter Guess "
+        '
+        'Submit_Guess
+        '
+        Me.Submit_Guess.Location = New System.Drawing.Point(325, 202)
+        Me.Submit_Guess.Name = "Submit_Guess"
+        Me.Submit_Guess.Size = New System.Drawing.Size(112, 21)
+        Me.Submit_Guess.TabIndex = 8
+        Me.Submit_Guess.Text = "Submit Guess"
+        Me.Submit_Guess.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Submit_Guess)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.user_guess)
+        Me.Controls.Add(Me.guesses)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.gamelevel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -84,4 +137,9 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents gamelevel As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents guesses As Label
+    Friend WithEvents user_guess As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Submit_Guess As Button
 End Class

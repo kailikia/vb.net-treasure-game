@@ -25,8 +25,8 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPlayer = New System.Windows.Forms.TextBox()
-        Me.txtDifficulty = New System.Windows.Forms.TextBox()
         Me.StartButton = New System.Windows.Forms.Button()
+        Me.level_combo = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -54,13 +54,6 @@ Partial Class Form1
         Me.txtPlayer.Size = New System.Drawing.Size(100, 23)
         Me.txtPlayer.TabIndex = 2
         '
-        'txtDifficulty
-        '
-        Me.txtDifficulty.Location = New System.Drawing.Point(378, 165)
-        Me.txtDifficulty.Name = "txtDifficulty"
-        Me.txtDifficulty.Size = New System.Drawing.Size(100, 23)
-        Me.txtDifficulty.TabIndex = 3
-        '
         'StartButton
         '
         Me.StartButton.Location = New System.Drawing.Point(349, 212)
@@ -70,13 +63,21 @@ Partial Class Form1
         Me.StartButton.Text = "Start Playing"
         Me.StartButton.UseVisualStyleBackColor = True
         '
+        'level_combo
+        '
+        Me.level_combo.FormattingEnabled = True
+        Me.level_combo.Location = New System.Drawing.Point(378, 170)
+        Me.level_combo.Name = "level_combo"
+        Me.level_combo.Size = New System.Drawing.Size(121, 23)
+        Me.level_combo.TabIndex = 5
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.level_combo)
         Me.Controls.Add(Me.StartButton)
-        Me.Controls.Add(Me.txtDifficulty)
         Me.Controls.Add(Me.txtPlayer)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -92,4 +93,5 @@ Partial Class Form1
     Friend WithEvents txtPlayer As TextBox
     Friend WithEvents txtDifficulty As TextBox
     Friend WithEvents StartButton As Button
+    Friend WithEvents level_combo As ComboBox
 End Class
