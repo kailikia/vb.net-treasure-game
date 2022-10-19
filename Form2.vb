@@ -59,7 +59,7 @@ Public Class Form2
         If submitted_guess = "" Then
             MessageBox.Show("Enter a value")
         Else
-            If submitted_guess.Length() <= 2 And submitted_guess.Substring(0, 1) < 8 Then
+            If submitted_guess.Length() = 2 And submitted_guess.Substring(0, 1) < 8 Then
 
                 Dim char1 As Integer = Val(submitted_guess.Substring(0, 1))
                 Dim char2 As Integer = Val(submitted_guess.Substring(1, 1))
@@ -76,17 +76,17 @@ Public Class Form2
 
                 If tfound > 0 Then
                     'change the color in array to green
-                    MessageBox.Show("Found change to green")
-                    DataGridView1(char1, char2).Value = "GREEN"
+                    'MessageBox.Show("Found change to green")
+                    DataGridView1(char1 + 1, char2 + 1).Value = "GREEN"
                 Else
                     'change the color in array to red
-                    MessageBox.Show("Not Found change to red")
-                    DataGridView1(char1, char2).Value = "RED"
+                    'MessageBox.Show("Not Found change to red")
+                    DataGridView1(char1 + 1, char2 + 1).Value = "RED"
 
                 End If
 
             Else
-                MessageBox.Show("Invalid Value")
+                MessageBox.Show("Invalid Value:Ensure you have 2 values")
             End If
 
         End If

@@ -33,7 +33,7 @@ Partial Class Form2
         Me.Submit_Guess = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Coordinate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.c1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c0 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,6 +42,7 @@ Partial Class Form2
         Me.c7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -127,11 +128,11 @@ Partial Class Form2
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Coordinate, Me.c1, Me.DataGridViewTextBoxColumn1, Me.c2, Me.c4, Me.c5, Me.c6, Me.c7, Me.c8, Me.c9})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Coordinate, Me.c0, Me.DataGridViewTextBoxColumn1, Me.c2, Me.c4, Me.c5, Me.c6, Me.c7, Me.c8, Me.c9, Me.DataGridViewTextBoxColumn2})
         Me.DataGridView1.Location = New System.Drawing.Point(12, 152)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(1017, 389)
+        Me.DataGridView1.Size = New System.Drawing.Size(1100, 390)
         Me.DataGridView1.TabIndex = 9
         '
         'Coordinate
@@ -139,56 +140,61 @@ Partial Class Form2
         Me.Coordinate.HeaderText = "Coordinate"
         Me.Coordinate.Name = "Coordinate"
         '
-        'c1
+        'c0
         '
-        Me.c1.HeaderText = "1"
-        Me.c1.Name = "c1"
+        Me.c0.HeaderText = "0"
+        Me.c0.Name = "c0"
         '
         'DataGridViewTextBoxColumn1
         '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "2"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "1"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'c2
         '
-        Me.c2.HeaderText = "3"
+        Me.c2.HeaderText = "2"
         Me.c2.Name = "c2"
         '
         'c4
         '
-        Me.c4.HeaderText = "4"
+        Me.c4.HeaderText = "3"
         Me.c4.Name = "c4"
         '
         'c5
         '
-        Me.c5.HeaderText = "5"
+        Me.c5.HeaderText = "4"
         Me.c5.Name = "c5"
         '
         'c6
         '
-        Me.c6.HeaderText = "6"
+        Me.c6.HeaderText = "5"
         Me.c6.Name = "c6"
         '
         'c7
         '
-        Me.c7.HeaderText = "7"
+        Me.c7.HeaderText = "6"
         Me.c7.Name = "c7"
         '
         'c8
         '
-        Me.c8.HeaderText = "8"
+        Me.c8.HeaderText = "7"
         Me.c8.Name = "c8"
         '
         'c9
         '
-        Me.c9.HeaderText = "9"
+        Me.c9.HeaderText = "8"
         Me.c9.Name = "c9"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "9"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1041, 553)
+        Me.ClientSize = New System.Drawing.Size(1104, 554)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Submit_Guess)
         Me.Controls.Add(Me.Label4)
@@ -227,4 +233,6 @@ Partial Class Form2
     Friend WithEvents c7 As DataGridViewTextBoxColumn
     Friend WithEvents c8 As DataGridViewTextBoxColumn
     Friend WithEvents c9 As DataGridViewTextBoxColumn
+    Friend WithEvents c0 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
 End Class
