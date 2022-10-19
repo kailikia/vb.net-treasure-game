@@ -31,12 +31,24 @@ Partial Class Form2
         Me.user_guess = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Submit_Guess = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Coordinate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.c9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'playername
         '
         Me.playername.AutoSize = True
-        Me.playername.Location = New System.Drawing.Point(288, 31)
+        Me.playername.Location = New System.Drawing.Point(137, 31)
         Me.playername.Name = "playername"
         Me.playername.Size = New System.Drawing.Size(39, 15)
         Me.playername.TabIndex = 0
@@ -45,7 +57,7 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(400, 31)
+        Me.Label1.Location = New System.Drawing.Point(249, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 15)
         Me.Label1.TabIndex = 1
@@ -54,7 +66,7 @@ Partial Class Form2
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(222, 31)
+        Me.Label2.Location = New System.Drawing.Point(71, 31)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 15)
         Me.Label2.TabIndex = 2
@@ -63,7 +75,7 @@ Partial Class Form2
         'gamelevel
         '
         Me.gamelevel.AutoSize = True
-        Me.gamelevel.Location = New System.Drawing.Point(454, 31)
+        Me.gamelevel.Location = New System.Drawing.Point(303, 31)
         Me.gamelevel.Name = "gamelevel"
         Me.gamelevel.Size = New System.Drawing.Size(41, 15)
         Me.gamelevel.TabIndex = 3
@@ -72,7 +84,7 @@ Partial Class Form2
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(277, 69)
+        Me.Label3.Location = New System.Drawing.Point(382, 31)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(113, 15)
         Me.Label3.TabIndex = 4
@@ -81,7 +93,7 @@ Partial Class Form2
         'guesses
         '
         Me.guesses.AutoSize = True
-        Me.guesses.Location = New System.Drawing.Point(411, 69)
+        Me.guesses.Location = New System.Drawing.Point(516, 31)
         Me.guesses.Name = "guesses"
         Me.guesses.Size = New System.Drawing.Size(41, 15)
         Me.guesses.TabIndex = 5
@@ -89,7 +101,7 @@ Partial Class Form2
         '
         'user_guess
         '
-        Me.user_guess.Location = New System.Drawing.Point(352, 145)
+        Me.user_guess.Location = New System.Drawing.Point(326, 70)
         Me.user_guess.Name = "user_guess"
         Me.user_guess.Size = New System.Drawing.Size(100, 23)
         Me.user_guess.TabIndex = 6
@@ -97,7 +109,7 @@ Partial Class Form2
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(275, 153)
+        Me.Label4.Location = New System.Drawing.Point(249, 78)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 15)
         Me.Label4.TabIndex = 7
@@ -105,18 +117,79 @@ Partial Class Form2
         '
         'Submit_Guess
         '
-        Me.Submit_Guess.Location = New System.Drawing.Point(325, 202)
+        Me.Submit_Guess.Location = New System.Drawing.Point(303, 113)
         Me.Submit_Guess.Name = "Submit_Guess"
         Me.Submit_Guess.Size = New System.Drawing.Size(112, 21)
         Me.Submit_Guess.TabIndex = 8
         Me.Submit_Guess.Text = "Submit Guess"
         Me.Submit_Guess.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Coordinate, Me.c1, Me.DataGridViewTextBoxColumn1, Me.c2, Me.c4, Me.c5, Me.c6, Me.c7, Me.c8, Me.c9})
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 152)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 25
+        Me.DataGridView1.Size = New System.Drawing.Size(1017, 389)
+        Me.DataGridView1.TabIndex = 9
+        '
+        'Coordinate
+        '
+        Me.Coordinate.HeaderText = "Coordinate"
+        Me.Coordinate.Name = "Coordinate"
+        '
+        'c1
+        '
+        Me.c1.HeaderText = "1"
+        Me.c1.Name = "c1"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "2"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'c2
+        '
+        Me.c2.HeaderText = "3"
+        Me.c2.Name = "c2"
+        '
+        'c4
+        '
+        Me.c4.HeaderText = "4"
+        Me.c4.Name = "c4"
+        '
+        'c5
+        '
+        Me.c5.HeaderText = "5"
+        Me.c5.Name = "c5"
+        '
+        'c6
+        '
+        Me.c6.HeaderText = "6"
+        Me.c6.Name = "c6"
+        '
+        'c7
+        '
+        Me.c7.HeaderText = "7"
+        Me.c7.Name = "c7"
+        '
+        'c8
+        '
+        Me.c8.HeaderText = "8"
+        Me.c8.Name = "c8"
+        '
+        'c9
+        '
+        Me.c9.HeaderText = "9"
+        Me.c9.Name = "c9"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1041, 553)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Submit_Guess)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.user_guess)
@@ -128,6 +201,7 @@ Partial Class Form2
         Me.Controls.Add(Me.playername)
         Me.Name = "Form2"
         Me.Text = "Form2"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +216,15 @@ Partial Class Form2
     Friend WithEvents user_guess As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Submit_Guess As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Coordinate As DataGridViewTextBoxColumn
+    Friend WithEvents c1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents c2 As DataGridViewTextBoxColumn
+    Friend WithEvents c4 As DataGridViewTextBoxColumn
+    Friend WithEvents c5 As DataGridViewTextBoxColumn
+    Friend WithEvents c6 As DataGridViewTextBoxColumn
+    Friend WithEvents c7 As DataGridViewTextBoxColumn
+    Friend WithEvents c8 As DataGridViewTextBoxColumn
+    Friend WithEvents c9 As DataGridViewTextBoxColumn
 End Class

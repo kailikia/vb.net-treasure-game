@@ -40,7 +40,15 @@ Public Class Form2
         End Using
 
         ' Create a 3D array
-
+        DataGridView1.Rows.Add("", "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(0, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(1, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(2, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(3, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(4, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(5, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(6, "", "", "", "", "", "", "", "", "", "")
+        DataGridView1.Rows.Add(7, "", "", "", "", "", "", "", "", "", "")
     End Sub
 
     Private Sub Submit_Guess_Click(sender As Object, e As EventArgs) Handles Submit_Guess.Click
@@ -72,7 +80,7 @@ Public Class Form2
 
                 Else
                     'change the color in array to red
-                    MessageBox.Show("Not Found change to green")
+                    MessageBox.Show("Not Found change to red")
 
                 End If
 
