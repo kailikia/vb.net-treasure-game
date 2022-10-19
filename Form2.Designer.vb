@@ -43,7 +43,8 @@ Partial Class Form2
         Me.c8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.instructions = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.max_guess_label = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,14 +89,14 @@ Partial Class Form2
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(382, 31)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(113, 15)
+        Me.Label3.Size = New System.Drawing.Size(173, 15)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Number of Guesses:"
+        Me.Label3.Text = "Remaining Number of Guesses:"
         '
         'guesses
         '
         Me.guesses.AutoSize = True
-        Me.guesses.Location = New System.Drawing.Point(516, 31)
+        Me.guesses.Location = New System.Drawing.Point(561, 31)
         Me.guesses.Name = "guesses"
         Me.guesses.Size = New System.Drawing.Size(41, 15)
         Me.guesses.TabIndex = 5
@@ -119,7 +120,7 @@ Partial Class Form2
         '
         'Submit_Guess
         '
-        Me.Submit_Guess.Location = New System.Drawing.Point(303, 113)
+        Me.Submit_Guess.Location = New System.Drawing.Point(445, 72)
         Me.Submit_Guess.Name = "Submit_Guess"
         Me.Submit_Guess.Size = New System.Drawing.Size(112, 21)
         Me.Submit_Guess.TabIndex = 8
@@ -191,21 +192,31 @@ Partial Class Form2
         Me.DataGridViewTextBoxColumn2.HeaderText = "9"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'instructions
+        'Label5
         '
-        Me.instructions.Location = New System.Drawing.Point(843, 31)
-        Me.instructions.Name = "instructions"
-        Me.instructions.Size = New System.Drawing.Size(163, 23)
-        Me.instructions.TabIndex = 10
-        Me.instructions.Text = "View Game Instructions"
-        Me.instructions.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(637, 31)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(110, 15)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Maximum Guesses:"
+        '
+        'max_guess_label
+        '
+        Me.max_guess_label.AutoSize = True
+        Me.max_guess_label.Location = New System.Drawing.Point(753, 31)
+        Me.max_guess_label.Name = "max_guess_label"
+        Me.max_guess_label.Size = New System.Drawing.Size(10, 15)
+        Me.max_guess_label.TabIndex = 11
+        Me.max_guess_label.Text = "l"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 554)
-        Me.Controls.Add(Me.instructions)
+        Me.Controls.Add(Me.max_guess_label)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Submit_Guess)
         Me.Controls.Add(Me.Label4)
@@ -247,4 +258,6 @@ Partial Class Form2
     Friend WithEvents c0 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents instructions As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents max_guess_label As Label
 End Class
