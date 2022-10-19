@@ -10,7 +10,6 @@
 
     End Sub
 
-
     Private Sub StartButtonClick(sender As Object, e As EventArgs) Handles StartButton.Click
 
         'Get form inputs
@@ -29,5 +28,11 @@
 
         End If
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        f2 = New Form3()
+        f2.Show()
+        Me.Hide()
     End Sub
 End Class

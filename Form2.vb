@@ -93,4 +93,7 @@ Public Class Form2
 
     End Sub
 
+    Private Sub instructions_Click(sender As Object, e As EventArgs) Handles instructions.Click
+
+    End Sub
 End Class

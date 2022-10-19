@@ -43,6 +43,7 @@ Partial Class Form2
         Me.c8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.instructions = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -190,11 +191,21 @@ Partial Class Form2
         Me.DataGridViewTextBoxColumn2.HeaderText = "9"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
+        'instructions
+        '
+        Me.instructions.Location = New System.Drawing.Point(843, 31)
+        Me.instructions.Name = "instructions"
+        Me.instructions.Size = New System.Drawing.Size(163, 23)
+        Me.instructions.TabIndex = 10
+        Me.instructions.Text = "View Game Instructions"
+        Me.instructions.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 554)
+        Me.Controls.Add(Me.instructions)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Submit_Guess)
         Me.Controls.Add(Me.Label4)
@@ -235,4 +246,5 @@ Partial Class Form2
     Friend WithEvents c9 As DataGridViewTextBoxColumn
     Friend WithEvents c0 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents instructions As Button
 End Class

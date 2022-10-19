@@ -27,6 +27,8 @@ Partial Class Form1
         Me.txtPlayer = New System.Windows.Forms.TextBox()
         Me.StartButton = New System.Windows.Forms.Button()
         Me.level_combo = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -71,11 +73,31 @@ Partial Class Form1
         Me.level_combo.Size = New System.Drawing.Size(121, 23)
         Me.level_combo.TabIndex = 5
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(316, 311)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(207, 33)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "View Game Instructions"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(338, 73)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(114, 15)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Treasure Hunt Game"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.level_combo)
         Me.Controls.Add(Me.StartButton)
         Me.Controls.Add(Me.txtPlayer)
@@ -94,4 +116,6 @@ Partial Class Form1
     Friend WithEvents txtDifficulty As TextBox
     Friend WithEvents StartButton As Button
     Friend WithEvents level_combo As ComboBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label3 As Label
 End Class
