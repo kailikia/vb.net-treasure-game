@@ -76,7 +76,7 @@ Public Class Form2
 
                 If tfound > 0 Then
                     'change the color in array to green
-                    'MessageBox.Show("Found change to green")
+
                     DataGridView1(char1 + 1, char2 + 1).Style.BackColor = Color.Green
                 Else
                     'change the color in array to red

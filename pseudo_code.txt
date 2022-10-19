@@ -1,0 +1,9 @@
+Pseduo Code
+1. Create the interface form to take user input, two fields and name and select level.
+2. Read each row of the treasure.txt content.
+3. Take the user guess input from the form.
+4. Check if the user guess limit is reached according to the level.
+5. Check if the value is valid i.e if it is between 0 to 79.
+6. For valid values, check if it is contained in the treasure content.
+7. If it is add green in the 2d Gridview, else add red.
+8. Update the user guesses by deducting 1. 
