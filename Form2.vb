@@ -78,6 +78,8 @@ Public Class Form2
                     'change the color in array to green
                     MessageBox.Show("Found change to green")
 
+
+
                 Else
                     'change the color in array to red
                     MessageBox.Show("Not Found change to red")
