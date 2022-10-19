@@ -77,16 +77,16 @@ Public Class Form2
                 If tfound > 0 Then
                     'change the color in array to green
                     'MessageBox.Show("Found change to green")
-                    DataGridView1(char1 + 1, char2 + 1).Value = "GREEN"
+                    DataGridView1(char1 + 1, char2 + 1).Style.BackColor = Color.Green
                 Else
                     'change the color in array to red
                     'MessageBox.Show("Not Found change to red")
-                    DataGridView1(char1 + 1, char2 + 1).Value = "RED"
+                    DataGridView1(char1 + 1, char2 + 1).Style.BackColor = Color.Red
 
                 End If
 
             Else
-                MessageBox.Show("Invalid Value:Ensure you have 2 values")
+                MessageBox.Show("Invalid Value:Ensure you have 2 values < 80")
             End If
 
         End If
