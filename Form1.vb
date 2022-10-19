@@ -20,6 +20,9 @@
         If player_name = "" Or game_level = "" Then
             MessageBox.Show("Enter both name and choose level")
 
+        ElseIf player_name.Length < 3 Then
+            MessageBox.Show("Name too short")
+
         Else
             'Load the form to choose treasure 
             f2 = New Form2(player_name, game_level)

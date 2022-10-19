@@ -1,0 +1,11 @@
+Test Log
+ - Name input - Ensure it is not null
+    	      - Check for String data type for all entry
+              - Ensure it is greater than 3 characters
+
+ - Select Level - Ensure it is not null
+ 
+ - Guess input - Check if the guess is between 0 to 79.
+               - Check it is a positive number
+               - Check if guess limit is reached
+ 
